@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
     <link
       rel="stylesheet"
     ></link>
@@ -15,13 +15,11 @@
     <div id="container">
       <div id="profile">
         <div id="image">
-          <img
-            id="profile-photo"
-            src="Ananda1.jpeg"
-            alt="Profile-Image"
-          />
+          <img id="profile-photo" src="{{ url_for('static', filename='image/Ana.jpg') }}" alt="Profile-Image">
           <a href="#"><i class="fas fa-pen stroke-transparent"></i></a>
         </div>
+      </div>
+    </div>
         <p id="name">
           Ananda Nur R<br /><span id="nim"
             >Nim 2000018408</span
